@@ -1,0 +1,329 @@
+/* your styles go here */
+
+.custom-scrollbar-js,
+.custom-scrollbar-css {
+  height: 200px;
+}
+
+.stats-2-block strong {
+  font-size: 1rem !important;
+}
+
+/* Custom Scrollbar using CSS */
+.custom-scrollbar-css {
+  overflow-y: scroll;
+}
+
+/* scrollbar width */
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* scrollbar track */
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* scrollbar handle */
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #00d2ff;
+  background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+}
+
+/************** loader *******************/
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+#loader-6 {
+  top: 40px;
+  left: -2.5px;
+}
+
+#loader-6 span {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: #3498db;
+}
+
+#loader-6 span:nth-child(1) {
+  animation: grow 1s ease-in-out infinite;
+}
+
+#loader-6 span:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+#loader-6 span:nth-child(3) {
+  animation: grow 1s ease-in-out 0.3s infinite;
+}
+
+#loader-6 span:nth-child(4) {
+  animation: grow 1s ease-in-out 0.45s infinite;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50% {
+    -webkit-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+
+/*************** internships ***************/
+.media {
+  padding: 3.4vh 5vw;
+  margin: 2vh 7vw;
+  border: 1px solid rgba(182, 176, 176, 0.2);
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.row {
+  margin-top: 2vh;
+  padding: 1vh;
+}
+.media svg {
+  margin-right: 5px;
+}
+.media:hover {
+  box-shadow: 1px 1px 20px 2px rgba(50, 50, 50, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .media {
+    padding: 3.4vh 5vw;
+    margin: 2vh 1.4vw;
+    width: auto;
+  }
+  .heading {
+    padding: 16vh 0 0 0;
+  }
+  .btn-action {
+    margin-top: 2vh;
+  }
+}
+
+/************* city form ***************/
+.btn-primary {
+  margin-left: 2vh;
+}
+#cityform {
+  margin-left: 14vh;
+}
+@media (max-width: 767.98px) {
+  .btn-primary {
+    margin-left: 0;
+    margin-top: 2vh;
+  }
+  #cityform {
+    padding: 0 2vh;
+    margin-left: 0;
+  }
+}
+
+/************* error div ***************/
+#error {
+  margin-top: 16vh;
+}
+
+/* COVID PAGE CSS */
+
+html {
+  font-size: 16px;
+}
+.hide {
+  display: none;
+}
+.fadeIn {
+  animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ---------------------------------------------- */
+/*                      MAIN                      */
+/* ---------------------------------------------- */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* -------- BG IMAGE -------- */
+.stats {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("img/bg.jpg");
+  background-size: cover;
+}
+/* -------- LATEST REPORT -------- */
+.latest-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  color: #fff;
+}
+
+.country,
+.total-cases,
+.recovered,
+.deaths {
+  height: 100px;
+}
+
+.name {
+  font-size: 2.2em;
+  color: #be64f1;
+  font-weight: bold;
+}
+
+.change-country {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.3em;
+}
+.total-cases .value {
+  font-size: 2em;
+  font-weight: bold;
+}
+.recovered .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #009688;
+}
+.deaths .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #f44336;
+}
+.new-value {
+  font-size: 1.3em;
+}
+/* -------- CHART -------- */
+.chart {
+  width: 80%;
+  height: 70vh;
+  min-height: 500px;
+
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* -------- SEARCH COUNTRY -------- */
+.search-country {
+  position: relative;
+  top: 10px;
+}
+.search-box {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 400px;
+  height: 30px;
+
+  background-color: #111;
+
+  z-index: 1;
+}
+.search-box input {
+  width: 360px;
+  height: 25px;
+
+  border: none;
+
+  background-color: transparent;
+  color: #fff;
+
+  padding-left: 15px;
+
+  font-size: 1.1em;
+}
+.search-box img {
+  width: 20px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.country-list {
+  display: flex;
+
+  position: absolute;
+  top: 30px;
+
+  width: 400px;
+  height: 300px;
+
+  background-color: #111;
+  opacity: 0.9;
+
+  overflow-y: scroll;
+}
+
+.country-list ul {
+  width: 100%;
+}
+
+.country-list ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+}
+.country-list ul li:hover {
+  border-left: 1px solid #fff;
+}
+/* SCROLL BAR */
+.country-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.country-list::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+.country-list::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+.country-list::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+/* ---------------------------------------------- */
+/*             SCREEN WIDTH < 600px               */
+/* ---------------------------------------------- */
+@media screen and (max-width: 600px) {
+  .latest-report {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
