@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Career Club</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all,follow">
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome CSS-->
+        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+        <!-- Custom Font Icons CSS-->
+        <link rel="stylesheet" href="css/font.css">
+        <!-- Google fonts - Muli-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+        <!-- theme stylesheet-->
+        <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+        <!-- Custom stylesheet - for your changes-->
+        <link rel="stylesheet" href="css/custom.css">
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <!-- Tweaks for older IEs-->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="search-panel">
+                    <div class="search-inner d-flex align-items-center justify-content-center">
+                        <div class="close-btn">Close <i class="fa fa-close"></i></div>
+                        <form id="searchForm" action="#">
+                            <div class="form-group">
+                                <input type="search" name="search" placeholder="What are you searching for...">
+                                <button type="submit" class="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex align-items-center justify-content-between">
+                    <div class="navbar-header">
+                        <!-- Navbar Header--><a href="index.html" class="navbar-brand">
+                            <div class="brand-text brand-big visible text-uppercase"><strong
+                                    class="text-primary">Career</strong><strong>Club</strong></div>
+                            <div class="brand-text brand-sm"><strong class="text-primary">C</strong><strong>C</strong>
+                            </div>
+                        </a>
+                        <!-- Sidebar Toggle Btn-->
+                        <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="d-flex align-items-stretch">
+            <!-- Sidebar Navigation-->
+            <nav id="sidebar">
+                <!-- Sidebar Header-->
+                <div class="sidebar-header d-flex align-items-center">
+                    <div class="avatar"><img src="img/ayu.png" alt="..." class="img-fluid rounded-circle"></div>
+                    <div class="title">
+                        <a href="http://www.ayushkumar459.me">
+                            <h1 class="h5">Ayush Kumar</h1>
+                        </a>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <!-- Sidebar Navidation Menus--><span class="heading">Menu</span>
+                <ul class="list-unstyled">
+                    <li><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+                    <li><a href="jobs.html"> <i class="fa fa-bar-chart"></i>Jobs </a></li>
+                    <li><a href="internship.html"> <i class="icon-padnote"></i>Internships </a></li>
+                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i
+                                class="icon-windows"></i>Resources </a>
+                        <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                            <li  class="active"><a href="#">Covid Data</a></li>
+                            <li><a href="wonsulting.html">Wonsulting</a></li>
+                            <li><a href="communion.html">Communion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Sidebar Navigation end-->
+
+
+            <!-- Body Content Starts  -->
+            <div class="page-content">
+                <div class="page-header">
+                    <div class="container-fluid">
+                        <h2 class="h5 no-margin-bottom">COVID STATS</h2>
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT -->
+
+                <main>
+                    <div class="stats">
+                        <div class="latest-report">
+                            <div class="country">
+                                <div class="name">Loading...</div>
+                                <div class="change-country">change</div>
+                                <div class="search-country hide">
+                                    <div class="search-box">
+                                        <input type="text" id="search-input" placeholder="Search Country..." />
+                                        <img class="close" src="img/close.svg" alt="" />
+                                    </div>
+                                    <div class="country-list"></div>
+                                </div>
+                            </div>
+                            <div class="total-cases">
+                                <div class="title">Total Cases</div>
+                                <div class="value">0</div>
+                                <div class="new-value">+0</div>
+                            </div>
+                            <div class="recovered">
+                                <div class="title">Recovered</div>
+                                <div class="value">0</div>
+                                <div class="new-value">+0</div>
+                            </div>
+                            <div class="deaths">
+                                <div class="title">Deaths</div>
+                                <div class="value">0</div>
+                                <div class="new-value">+0</div>
+                            </div>
+                        </div>
+                        <div class="chart">
+                            <canvas id="axes_line_chart"></canvas>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- MAIN CONTENT ENDS -->
+
+                <footer class="footer">
+                    <div class="footer__block block no-margin-bottom">
+                        <div class="container-fluid text-center">
+                            <p class="no-margin-bottom">2020 &copy; Career Club. | Developed by
+                                <a href="http://www.ayushkumar459.me" target="_blank" rel="noopener noreferrer">Ayush
+                                    Kumar</a> | Design Inspiration from <a
+                                    href="https://bootstrapious.com">Bootstrapious
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- Body Content Ends -->
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+            integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+        <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+        <script src="js/countries.js"></script>
+        <script src="js/app.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper.js/umd/popper.min.js"> </script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+        <script src="vendor/chart.js/Chart.min.js"></script>
+        <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script src="js/charts-home.js"></script>
+        <script src="js/front.js"></script>
+    </body>
+
+</html>
